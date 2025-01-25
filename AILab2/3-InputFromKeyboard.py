@@ -2,15 +2,15 @@
 from openai import OpenAI
 
 client = OpenAI(
-  api_key="sk-XtTqlt2gOnGIXgwH93Da2A",
-  base_url="https://ailab.makespacemadrid.org" # proxy base url
+  api_key="sk-fffffffffffffffffffff",
+  base_url="http://....." # proxy base url
 )
 
 
 prompt = input("Hola,como te puedo ayudar? ")
 
 response = client.chat.completions.create(
-  model="vicuna:7b-v1.5",
+  model="llama3.2:latest",
   messages = [
       {
           "role": "user",
